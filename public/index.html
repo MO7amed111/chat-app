@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>📱 دردشة الأصدقاء</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <div id="login">
+    <input type="text" id="name" placeholder="👤 اكتب اسمك">
+    <button onclick="join()">انضم</button>
+  </div>
+
+  <div id="chat-container" style="display:none;">
+    <div id="sidebar">
+      <h3>🟢 المتصلون</h3>
+      <ul id="users"></ul>
+      <button onclick="leaveChat()">مغادرة الدردشة</button>
+    </div>
+
+    <div id="main">
+      <div id="chat"></div>
+      <input type="text" id="message" placeholder="💬 اكتب رسالة">
+      <button onclick="send()">📨</button>
+    </div>
+  </div>
+</div>
+
+<!-- أضف عنصرين صوت بدل واحد -->
+<audio id="joinSound" src="notification.mp3" preload="auto"></audio>
+<audio id="messageSound" src="pop.mp3" preload="auto"></audio>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

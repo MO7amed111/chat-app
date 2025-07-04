@@ -1,0 +1,11 @@
+body { margin: 0; font-family: Arial; background: #222; color: #fff; }
+#container { display: flex; height: 100vh; }
+#login { margin: auto; text-align: center; }
+#chat-container { display: flex; flex: 1; }
+#sidebar { width: 200px; background: #333; padding: 10px; overflow-y: auto; }
+#main { flex: 1; display: flex; flex-direction: column; }
+#chat { flex: 1; padding: 10px; overflow-y: auto; background: #111; }
+#chat div { margin-bottom: 5px; }
+input, button { padding: 5px; margin: 5px; }
+#users { list-style: none; padding: 0; }
+#users li { padding: 2px; border-bottom: 1px solid #555; }
